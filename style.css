@@ -1,0 +1,545 @@
+
+/* NOTE: CSS Reset */
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html,
+  body {
+    -webkit-text-size-adjust: none;
+       -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+            text-size-adjust: none;
+    height: 100%;
+  }
+  
+  li,
+  ol {
+    padding: 0;
+    list-style: none;
+  }
+  
+  button {
+    color: inherit;
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    outline: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    cursor: pointer;
+  }
+  
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section {
+    display: block;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    margin: 0;
+    font-weight: inherit;
+  }
+  
+  figcaption,
+  figure,
+  main {
+    display: block;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  hr {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+  }
+  
+  pre {
+    font-size: 1em;
+  }
+  
+  a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  
+  b,
+  strong {
+    font-weight: inherit;
+  }
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  code,
+  kbd,
+  samp {
+    font-size: 1em;
+  }
+  
+  dfn {
+    font-style: italic;
+  }
+  
+  mark {
+    background-color: #ff0;
+    color: #000;
+  }
+  
+  small {
+    font-size: 80%;
+  }
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  audio,
+  video {
+    display: inline-block;
+  }
+  
+  audio:not([controls]) {
+    display: none;
+    height: 0;
+  }
+  
+  img {
+    border-style: none;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+  }
+  
+  button,
+  input {
+    overflow: visible;
+  }
+  
+  button,
+  select {
+    text-transform: none;
+  }
+  
+  button,
+  html [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+  }
+  
+  progress {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  [type="checkbox"],
+  [type="radio"] {
+    padding: 0;
+  }
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  [type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+  }
+  
+  [type="search"]::-webkit-search-cancel-button,
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+  }
+  
+  details,
+  menu {
+    display: block;
+  }
+  
+  summary {
+    display: list-item;
+  }
+  
+  canvas {
+    display: inline-block;
+  }
+  
+  template {
+    display: none;
+  }
+  
+  [hidden] {
+    display: none;
+  }
+  
+/*fonts*/
+@font-face {
+    font-family: 'Changa ExtraLight';
+    src: url('fonts/Changa-ExtraLight.eot');
+    src: url('fonts/Changa-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Changa-ExtraLight.woff2') format('woff2'),
+        url('fonts/Changa-ExtraLight.woff') format('woff'),
+        url('fonts/Changa-ExtraLight.ttf') format('truetype'),
+        url('fonts/Changa-ExtraLight.svg#Changa-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa Bold';
+    src: url('fonts/Changa-Bold.eot');
+    src: url('fonts/Changa-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Changa-Bold.woff2') format('woff2'),
+        url('fonts/Changa-Bold.woff') format('woff'),
+        url('fonts/Changa-Bold.ttf') format('truetype'),
+        url('fonts/Changa-Bold.svg#Changa-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa ExtraBold';
+    src: url('fonts/Changa-ExtraBold.eot');
+    src: url('fonts/Changa-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Changa-ExtraBold.woff2') format('woff2'),
+        url('fonts/Changa-ExtraBold.woff') format('woff'),
+        url('fonts/Changa-ExtraBold.ttf') format('truetype'),
+        url('fonts/Changa-ExtraBold.svg#Changa-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa Light';
+    src: url('fonts/Changa-Light.eot');
+    src: url('fonts/Changa-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Changa-Light.woff2') format('woff2'),
+        url('fonts/Changa-Light.woff') format('woff'),
+        url('fonts/Changa-Light.ttf') format('truetype'),
+        url('fonts/Changa-Light.svg#Changa-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa Regular';
+    src: url('fonts/Changa-Regular.eot');
+    src: url('fonts/Changa-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Changa-Regular.woff2') format('woff2'),
+        url('fonts/Changa-Regular.woff') format('woff'),
+        url('fonts/Changa-Regular.ttf') format('truetype'),
+        url('fonts/Changa-Regular.svg#Changa-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa SemiBold';
+    src: url('fonts/Changa-SemiBold.eot');
+    src: url('fonts/Changa-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Changa-SemiBold.woff2') format('woff2'),
+        url('fonts/Changa-SemiBold.woff') format('woff'),
+        url('fonts/Changa-SemiBold.ttf') format('truetype'),
+        url('fonts/Changa-SemiBold.svg#Changa-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa Medium';
+    src: url('fonts/Changa-Medium.eot');
+    src: url('fonts/Changa-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Changa-Medium.woff2') format('woff2'),
+        url('fonts/Changa-Medium.woff') format('woff'),
+        url('fonts/Changa-Medium.ttf') format('truetype'),
+        url('fonts/Changa-Medium.svg#Changa-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*generic styles*/
+body {
+    font-family: 'Changa', sans-serif, Arial, Helvetica;
+}
+
+a {
+    color: black;
+    font-size: 32px;
+    line-height: 1;
+    font-family: 'Changa Light';
+    text-decoration: none;
+  }
+h1{
+  font-family: 'Changa semibold';
+  font-size: 54px;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  color: #000000;
+  text-align: center;
+}
+h2 {
+  font-family: 'Changa semibold';
+  font-size: 30px;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  color: #000000;
+  text-align: center;
+}
+p{
+  font-family: 'Changa ExtraLight';
+  font-size: 18px;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  color: #000000;
+  text-align: center;
+}
+/*header*/
+.header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .header__title {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  
+
+/*main*/
+.grid--2--cols {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-gap: 80px; 
+  background-image: url('images/fondo.jpg'); width: 100%; height: 100vh;
+
+}
+
+
+.side__menu__container {
+    background-color: #df0209;
+    align-items: flex-start;
+    padding-top: 0%;
+    padding-bottom: 0;
+    margin-top: 0%;
+    margin-left: 1px;
+  }
+
+  .side__menu-list {
+    background-color: #df0209;
+    padding-left: 5px;
+    width:5px;
+    align-items: center;
+    font-size: 20px;
+    list-style: none;
+    margin-top: 0%;
+    height: 940px;
+    
+  }
+  .side__menu-item {
+    color: black;
+    padding-left: 2cm;
+    line-height: 60px;
+    list-style: none;
+    text-decoration: none;
+}
+.side__menu-item:last-child {
+    color: yellow;
+    padding-left: 2cm;
+    line-height: 20px;
+    list-style: none;
+    margin-top: 10px;
+    text-decoration: none;
+}
+  .pokemon {
+    display: flex;
+    justify-content: center;
+
+  }
+  .imagentexto {
+    width: auto;
+    height: auto;
+    padding: 100px;
+    padding-left: 150px;
+    
+  }
+  
+  .buscador__form {
+    display: flex;
+    justify-content: center;
+  }
+
+  #container{
+    width: min(100%, 1000px);
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #poke-card {
+    align-items: center;
+  
+  }
+  .nombrePokemon {
+    font-family: "Changa Medium";
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+ .cardList {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: lavenderblush;
+  transition: 0.3s;
+  height: 500px;
+  width: 300px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+ }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .mensajerror {
+    font-family: "Changa Medium";
+    font-size: 20px;
+    font-weight: 500;
+
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+/*footer*/
+.footer__item {
+  padding: 30px;
+}
+.pokeball-logo {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.poke-img{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.infofooter {
+  display: flex;
+  justify-content: center;
+}

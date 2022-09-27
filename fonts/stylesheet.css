@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Changa';
+    src: url('Changa-ExtraLight.eot');
+    src: url('Changa-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Changa-ExtraLight.woff2') format('woff2'),
+        url('Changa-ExtraLight.woff') format('woff'),
+        url('Changa-ExtraLight.ttf') format('truetype'),
+        url('Changa-ExtraLight.svg#Changa-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('Changa-Bold.eot');
+    src: url('Changa-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Changa-Bold.woff2') format('woff2'),
+        url('Changa-Bold.woff') format('woff'),
+        url('Changa-Bold.ttf') format('truetype'),
+        url('Changa-Bold.svg#Changa-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('Changa-ExtraBold.eot');
+    src: url('Changa-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Changa-ExtraBold.woff2') format('woff2'),
+        url('Changa-ExtraBold.woff') format('woff'),
+        url('Changa-ExtraBold.ttf') format('truetype'),
+        url('Changa-ExtraBold.svg#Changa-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('Changa-Light.eot');
+    src: url('Changa-Light.eot?#iefix') format('embedded-opentype'),
+        url('Changa-Light.woff2') format('woff2'),
+        url('Changa-Light.woff') format('woff'),
+        url('Changa-Light.ttf') format('truetype'),
+        url('Changa-Light.svg#Changa-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('Changa-Regular.eot');
+    src: url('Changa-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Changa-Regular.woff2') format('woff2'),
+        url('Changa-Regular.woff') format('woff'),
+        url('Changa-Regular.ttf') format('truetype'),
+        url('Changa-Regular.svg#Changa-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('Changa-SemiBold.eot');
+    src: url('Changa-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Changa-SemiBold.woff2') format('woff2'),
+        url('Changa-SemiBold.woff') format('woff'),
+        url('Changa-SemiBold.ttf') format('truetype'),
+        url('Changa-SemiBold.svg#Changa-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('Changa-Medium.eot');
+    src: url('Changa-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Changa-Medium.woff2') format('woff2'),
+        url('Changa-Medium.woff') format('woff'),
+        url('Changa-Medium.ttf') format('truetype'),
+        url('Changa-Medium.svg#Changa-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
